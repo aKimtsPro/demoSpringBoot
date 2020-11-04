@@ -1,10 +1,14 @@
-package bstrom.akim.demoSpringBoot;
+package bstrom.akim.demoSpringBoot.viaConfig;
 
 import java.util.Scanner;
 
-public class InterfaceConsole {
+public class InterfaceConsoleImpl implements InterfaceConsole{
 
     private Calculatrice calculatrice;
+
+    public InterfaceConsoleImpl(Calculatrice calculatrice) {
+        this.calculatrice = calculatrice;
+    }
 
     public void faireCalcul(){
 

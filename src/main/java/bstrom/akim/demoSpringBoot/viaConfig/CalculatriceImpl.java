@@ -1,6 +1,6 @@
-package bstrom.akim.demoSpringBoot;
+package bstrom.akim.demoSpringBoot.viaConfig;
 
-public class Calculatrice {
+public class CalculatriceImpl implements Calculatrice {
 
     private double dernierResultat;
 
