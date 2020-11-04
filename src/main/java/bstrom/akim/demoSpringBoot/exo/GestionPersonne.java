@@ -16,7 +16,8 @@ public interface GestionPersonne {
 
     // Modifie le nom d'une personne de la liste
     // Si la personne n'est pas dans la liste, lance une exception
-    void updateName(int index, String nom);
+    void updateName(int index, String nom) throws PersonNotFoundException;
 
+    // Récupère une copie de la liste
     List<Personne> getList();
 }
