@@ -1,4 +1,4 @@
-package bstrom.akim.demoSpringBoot.viaComponent.service;
+package bstrom.akim.demoSpringBoot.demo.viaComponent.service;
 
 public interface ChaineAEcrire {
 

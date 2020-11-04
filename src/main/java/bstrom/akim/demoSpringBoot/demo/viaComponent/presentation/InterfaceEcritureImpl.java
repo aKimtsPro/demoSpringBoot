@@ -1,7 +1,6 @@
-package bstrom.akim.demoSpringBoot.viaComponent.presentation;
+package bstrom.akim.demoSpringBoot.demo.viaComponent.presentation;
 
-import bstrom.akim.demoSpringBoot.viaComponent.service.ChaineAEcrire;
-import bstrom.akim.demoSpringBoot.viaConfig.Calculatrice;
+import bstrom.akim.demoSpringBoot.demo.viaComponent.service.ChaineAEcrire;
 import org.springframework.stereotype.Component;
 
 import java.util.Scanner;
@@ -10,11 +9,11 @@ import java.util.Scanner;
 public class InterfaceEcritureImpl implements InterfaceEcriture {
 
     private ChaineAEcrire cae;
-    private Calculatrice calculatrice;
+    private Scanner scan;
 
-    public InterfaceEcritureImpl(ChaineAEcrire cae, Calculatrice c) {
+    public InterfaceEcritureImpl(ChaineAEcrire cae, Scanner scan) {
         this.cae = cae;
-        calculatrice = c;
+        this.scan = scan;
     }
 
     private void afficherMenu() {
@@ -26,14 +25,12 @@ public class InterfaceEcritureImpl implements InterfaceEcriture {
 
     private int getChoix() {
         System.out.println("Veuillez entrer votre choix :");
-        Scanner sc = new Scanner(System.in);
-        return sc.nextInt();
+        return scan.nextInt();
     }
 
     private void recupText() {
         System.out.println("Veuillez entrer le texte à ajouter:");
-        Scanner sc = new Scanner(System.in);
-        cae.ajouterTexte( sc.nextLine() );
+        cae.ajouterTexte( scan.nextLine() );
     }
 
     private void afficheText() {

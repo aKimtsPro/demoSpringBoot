@@ -1,4 +1,4 @@
-package bstrom.akim.demoSpringBoot.viaComponent.presentation;
+package bstrom.akim.demoSpringBoot.demo.viaComponent.presentation;
 
 import org.springframework.beans.factory.InitializingBean;
 

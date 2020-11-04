@@ -1,4 +1,4 @@
-package bstrom.akim.demoSpringBoot.viaConfig;
+package bstrom.akim.demoSpringBoot.demo.viaConfig;
 
 public interface InterfaceConsole {
 
