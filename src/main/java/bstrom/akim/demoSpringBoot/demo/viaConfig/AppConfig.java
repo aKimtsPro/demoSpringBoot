@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.Scanner;
 
-@Configuration
+//@Configuration
 public class AppConfig {
 
     @Bean(name = {"calc"})

@@ -1,5 +1,6 @@
 package bstrom.akim.demoSpringBoot.demo.viaConfig;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class InterfaceConsoleImpl implements InterfaceConsole{
