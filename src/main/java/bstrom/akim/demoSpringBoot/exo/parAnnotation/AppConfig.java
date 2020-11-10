@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Profile;
 import java.util.Scanner;
 
 @Configuration
-@Profile("config1")
 public class AppConfig {
 
     @Bean

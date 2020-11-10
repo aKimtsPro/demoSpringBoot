@@ -1,6 +1,6 @@
-package bstrom.akim.demoSpringBoot.exo.parAnnotation.beans.implementation;
+package bstrom.akim.demoSpringBoot.exo.parAnnotation.service;
 
-import bstrom.akim.demoSpringBoot.exo.parAnnotation.beans.interfaces.GestionPersonne;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.service.GestionPersonne;
 import bstrom.akim.demoSpringBoot.exo.parAnnotation.exception.PersonNotFoundException;
 import bstrom.akim.demoSpringBoot.exo.parAnnotation.model.Personne;
 import org.springframework.context.annotation.Profile;
@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Component
-@Profile({"dev", "config1"})
+@Profile({"config0"})
 public class GestionPersonneMock implements GestionPersonne {
 
     @Override

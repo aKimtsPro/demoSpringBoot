@@ -1,11 +1,10 @@
-package bstrom.akim.demoSpringBoot.exo.parAnnotation.beans.implementation;
+package bstrom.akim.demoSpringBoot.exo.parAnnotation.presentation;
 
-import bstrom.akim.demoSpringBoot.exo.parAnnotation.beans.interfaces.GestionPersonne;
-import bstrom.akim.demoSpringBoot.exo.parAnnotation.beans.interfaces.InterfaceConsoleExo;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.service.GestionPersonne;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.presentation.InterfaceConsoleExo;
 import bstrom.akim.demoSpringBoot.exo.parAnnotation.exception.PersonNotFoundException;
 import bstrom.akim.demoSpringBoot.exo.parAnnotation.model.Personne;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;

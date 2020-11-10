@@ -1,4 +1,4 @@
-package bstrom.akim.demoSpringBoot.exo.parAnnotation.beans.interfaces;
+package bstrom.akim.demoSpringBoot.exo.parAnnotation.service;
 
 import bstrom.akim.demoSpringBoot.exo.parAnnotation.exception.PersonNotFoundException;
 import bstrom.akim.demoSpringBoot.exo.parAnnotation.model.Personne;

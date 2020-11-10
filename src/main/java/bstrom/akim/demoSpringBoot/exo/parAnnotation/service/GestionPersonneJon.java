@@ -1,6 +1,6 @@
-package bstrom.akim.demoSpringBoot.exo.parAnnotation.beans.implementation;
+package bstrom.akim.demoSpringBoot.exo.parAnnotation.service;
 
-import bstrom.akim.demoSpringBoot.exo.parAnnotation.beans.interfaces.GestionPersonne;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.service.GestionPersonne;
 import bstrom.akim.demoSpringBoot.exo.parAnnotation.exception.PersonNotFoundException;
 import bstrom.akim.demoSpringBoot.exo.parAnnotation.model.Personne;
 import org.springframework.context.annotation.Profile;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 
 @Component
-@Profile({"gestion", "prod"})
+@Profile({"config1"})
 public class GestionPersonneJon implements GestionPersonne {
     ArrayList<Personne> listPersonne = new ArrayList<Personne>();
 

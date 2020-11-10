@@ -1,12 +1,14 @@
-package bstrom.akim.demoSpringBoot.exo.parAnnotation.beans.implementation;
+package bstrom.akim.demoSpringBoot.exo.parAnnotation.service;
 
-import bstrom.akim.demoSpringBoot.exo.parAnnotation.beans.interfaces.GestionPersonne;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.service.GestionPersonne;
 import bstrom.akim.demoSpringBoot.exo.parAnnotation.exception.PersonNotFoundException;
 import bstrom.akim.demoSpringBoot.exo.parAnnotation.model.Personne;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Component("config2")
 public class GestionPersonneAlex implements GestionPersonne {
     ArrayList<Personne> list = new ArrayList<>();
 
