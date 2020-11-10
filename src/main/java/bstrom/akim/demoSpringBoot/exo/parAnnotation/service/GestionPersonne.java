@@ -1,14 +1,14 @@
 package bstrom.akim.demoSpringBoot.exo.parAnnotation.service;
 
 import bstrom.akim.demoSpringBoot.exo.parAnnotation.exception.PersonNotFoundException;
-import bstrom.akim.demoSpringBoot.exo.parAnnotation.model.Personne;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.service.dto.PersonneDTO;
 
 import java.util.List;
 
 public interface GestionPersonne {
 
     // Ajoute une personne à la liste
-    void add(Personne p);
+    void add(PersonneDTO p);
 
     // supprime une personne à l'index donnée
     // si la personne n'est pas trouvée dans la liste, lance une exception
@@ -19,5 +19,5 @@ public interface GestionPersonne {
     void updateName(int index, String nom) throws PersonNotFoundException;
 
     // Récupère une copie de la liste
-    List<Personne> getList();
+    List<PersonneDTO> getList();
 }

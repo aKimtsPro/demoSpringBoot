@@ -1,9 +1,8 @@
 package bstrom.akim.demoSpringBoot.exo.parAnnotation.presentation;
 
 import bstrom.akim.demoSpringBoot.exo.parAnnotation.service.GestionPersonne;
-import bstrom.akim.demoSpringBoot.exo.parAnnotation.presentation.InterfaceConsoleExo;
 import bstrom.akim.demoSpringBoot.exo.parAnnotation.exception.PersonNotFoundException;
-import bstrom.akim.demoSpringBoot.exo.parAnnotation.model.Personne;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.service.dto.PersonneDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -60,7 +59,7 @@ public class InterfaceConsoleImpl implements InterfaceConsoleExo {
 
     private void ajouter(){
 
-        Personne p = new Personne();
+        PersonneDTO p = new PersonneDTO();
 
         System.out.println("Veuillez entrez les infos concernant la personne à insérer:");
         System.out.print("- nom :");
@@ -107,7 +106,7 @@ public class InterfaceConsoleImpl implements InterfaceConsoleExo {
     }
     private void afficherPersonnes(){
 
-        List<Personne> list = gestionPersonne.getList();
+        List<PersonneDTO> list = gestionPersonne.getList();
 
         if(list.isEmpty())
             System.out.println("La liste est vide");

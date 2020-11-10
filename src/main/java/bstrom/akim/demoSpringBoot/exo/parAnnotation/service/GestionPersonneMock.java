@@ -1,8 +1,7 @@
 package bstrom.akim.demoSpringBoot.exo.parAnnotation.service;
 
-import bstrom.akim.demoSpringBoot.exo.parAnnotation.service.GestionPersonne;
 import bstrom.akim.demoSpringBoot.exo.parAnnotation.exception.PersonNotFoundException;
-import bstrom.akim.demoSpringBoot.exo.parAnnotation.model.Personne;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.service.dto.PersonneDTO;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
@@ -16,7 +15,7 @@ import java.util.List;
 public class GestionPersonneMock implements GestionPersonne {
 
     @Override
-    public void add(Personne p) {
+    public void add(PersonneDTO p) {
     }
 
     @Override
@@ -32,11 +31,11 @@ public class GestionPersonneMock implements GestionPersonne {
     }
 
     @Override
-    public List<Personne> getList() {
+    public List<PersonneDTO> getList() {
         return new ArrayList<>(Arrays.asList(
-                new Personne("luc", LocalDate.now()),
-                new Personne("marie", LocalDate.now()),
-                new Personne("dominique", LocalDate.now())
+                new PersonneDTO(0,"luc", LocalDate.now()),
+                new PersonneDTO(1,"marie", LocalDate.now()),
+                new PersonneDTO(2,"dominique", LocalDate.now())
         ));
     }
 }

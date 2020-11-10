@@ -1,19 +1,20 @@
 package bstrom.akim.demoSpringBoot.exo.parAnnotation.service;
 
-import bstrom.akim.demoSpringBoot.exo.parAnnotation.service.GestionPersonne;
 import bstrom.akim.demoSpringBoot.exo.parAnnotation.exception.PersonNotFoundException;
-import bstrom.akim.demoSpringBoot.exo.parAnnotation.model.Personne;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.service.dto.PersonneDTO;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Component("config2")
+@Component
+@Profile("config2")
 public class GestionPersonneAlex implements GestionPersonne {
-    ArrayList<Personne> list = new ArrayList<>();
+    ArrayList<PersonneDTO> list = new ArrayList<>();
 
     @Override
-    public void add(Personne p) {
+    public void add(PersonneDTO p) {
         list.add(p);
     }
 
@@ -35,7 +36,7 @@ public class GestionPersonneAlex implements GestionPersonne {
 
     @Override
     @SuppressWarnings("unchecked")
-    public List<Personne> getList() {
-        return (List<Personne>)list.clone();
+    public List<PersonneDTO> getList() {
+        return (List<PersonneDTO>)list.clone();
     }
 }
