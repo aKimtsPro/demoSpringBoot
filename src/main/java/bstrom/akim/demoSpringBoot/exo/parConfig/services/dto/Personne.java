@@ -1,4 +1,4 @@
-package bstrom.akim.demoSpringBoot.exo.parConfig.model;
+package bstrom.akim.demoSpringBoot.exo.parConfig.services.dto;
 
 import java.time.LocalDate;
 

@@ -2,7 +2,7 @@ package bstrom.akim.demoSpringBoot.exo.parConfig.presentation;
 
 import bstrom.akim.demoSpringBoot.exo.parConfig.services.GestionPersonne;
 import bstrom.akim.demoSpringBoot.exo.parConfig.exception.PersonNotFoundException;
-import bstrom.akim.demoSpringBoot.exo.parConfig.model.Personne;
+import bstrom.akim.demoSpringBoot.exo.parConfig.services.dto.Personne;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
