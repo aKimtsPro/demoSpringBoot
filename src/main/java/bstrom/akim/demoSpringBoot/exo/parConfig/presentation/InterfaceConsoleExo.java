@@ -1,4 +1,4 @@
-package bstrom.akim.demoSpringBoot.exo;
+package bstrom.akim.demoSpringBoot.exo.parConfig.presentation;
 
 import org.springframework.beans.factory.InitializingBean;
 

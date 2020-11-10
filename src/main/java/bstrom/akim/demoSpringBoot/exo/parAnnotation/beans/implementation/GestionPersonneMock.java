@@ -1,14 +1,18 @@
-package bstrom.akim.demoSpringBoot.exo;
+package bstrom.akim.demoSpringBoot.exo.parAnnotation.beans.implementation;
 
-import bstrom.akim.demoSpringBoot.exo.GestionPersonne;
-import bstrom.akim.demoSpringBoot.exo.exception.PersonNotFoundException;
-import bstrom.akim.demoSpringBoot.exo.model.Personne;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.beans.interfaces.GestionPersonne;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.exception.PersonNotFoundException;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.model.Personne;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@Component
+@Profile({"dev", "config1"})
 public class GestionPersonneMock implements GestionPersonne {
 
     @Override

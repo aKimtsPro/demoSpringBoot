@@ -1,4 +1,4 @@
-package bstrom.akim.demoSpringBoot.exo.model;
+package bstrom.akim.demoSpringBoot.exo.parAnnotation.model;
 
 import java.time.LocalDate;
 

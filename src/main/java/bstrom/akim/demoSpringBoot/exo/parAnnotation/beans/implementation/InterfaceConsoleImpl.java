@@ -1,22 +1,25 @@
-package bstrom.akim.demoSpringBoot.exo;
+package bstrom.akim.demoSpringBoot.exo.parAnnotation.beans.implementation;
 
-import bstrom.akim.demoSpringBoot.exo.exception.PersonNotFoundException;
-import bstrom.akim.demoSpringBoot.exo.model.Personne;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.beans.interfaces.GestionPersonne;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.beans.interfaces.InterfaceConsoleExo;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.exception.PersonNotFoundException;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.model.Personne;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.List;
 import java.util.Scanner;
 
+@Component
 public class InterfaceConsoleImpl implements InterfaceConsoleExo {
 
+    @Autowired
     private GestionPersonne gestionPersonne;
+    @Autowired
     private Scanner scan;
-
-    public InterfaceConsoleImpl(GestionPersonne gestionPersonne, Scanner scanner){
-        this.gestionPersonne = gestionPersonne;
-        this.scan = scanner;
-    }
 
     // region fonctionnalités
 

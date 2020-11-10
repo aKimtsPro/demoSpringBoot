@@ -1,4 +1,4 @@
-package bstrom.akim.demoSpringBoot.exo.exception;
+package bstrom.akim.demoSpringBoot.exo.parConfig.exception;
 
 public class PersonNotFoundException extends Exception {
 

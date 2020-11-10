@@ -1,7 +1,7 @@
-package bstrom.akim.demoSpringBoot.exo;
+package bstrom.akim.demoSpringBoot.exo.parConfig.services;
 
-import bstrom.akim.demoSpringBoot.exo.exception.PersonNotFoundException;
-import bstrom.akim.demoSpringBoot.exo.model.Personne;
+import bstrom.akim.demoSpringBoot.exo.parConfig.exception.PersonNotFoundException;
+import bstrom.akim.demoSpringBoot.exo.parConfig.model.Personne;
 
 import java.util.ArrayList;
 public class GestionPersonneJon implements GestionPersonne {

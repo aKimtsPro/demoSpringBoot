@@ -1,7 +1,7 @@
-package bstrom.akim.demoSpringBoot.exo;
+package bstrom.akim.demoSpringBoot.exo.parAnnotation.beans.interfaces;
 
-import bstrom.akim.demoSpringBoot.exo.exception.PersonNotFoundException;
-import bstrom.akim.demoSpringBoot.exo.model.Personne;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.exception.PersonNotFoundException;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.model.Personne;
 
 import java.util.List;
 

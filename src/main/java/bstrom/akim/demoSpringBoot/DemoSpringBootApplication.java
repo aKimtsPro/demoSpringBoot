@@ -9,9 +9,7 @@ public class DemoSpringBootApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(DemoSpringBootApplication.class, args);
-//
-//		InterfaceConsoleImpl ic = context.getBean(InterfaceConsoleImpl.class);
-//		ic.faireCalcul();
+
 
 	}
 
