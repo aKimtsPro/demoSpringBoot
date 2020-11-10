@@ -6,35 +6,37 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Component
-@Profile({"config1"})
-public class GestionPersonneJon implements GestionPersonne {
-    ArrayList<PersonneDTO> listPersonne = new ArrayList<PersonneDTO>();
+@Profile("config2")
+public class PersonneServiceAlex implements PersonneService {
+    ArrayList<PersonneDTO> list = new ArrayList<>();
 
     @Override
     public void add(PersonneDTO p) {
-        listPersonne.add(p);
+        list.add(p);
     }
 
     @Override
     public void delete(int index) throws PersonNotFoundException {
-        if (index<listPersonne.size() && index >=0 ){
-            listPersonne.remove(index);
-        }
-        else throw new PersonNotFoundException(index);
+        if(index > this.list.size() || index < 0)
+            throw new PersonNotFoundException(index);
+
+        list.remove(index);
     }
 
     @Override
     public void updateName(int index, String nom) throws PersonNotFoundException {
-        if (index<listPersonne.size() && index >=0){
-            listPersonne.get(index).setNom(nom);
-        }
-        else throw new PersonNotFoundException(index);
+        if(index > this.list.size() || index < 0)
+            throw new PersonNotFoundException(index);
+
+        list.get(index).setNom(nom);
     }
 
     @Override
-    public ArrayList<PersonneDTO> getList() {
-        return (ArrayList<PersonneDTO>)listPersonne.clone();
+    @SuppressWarnings("unchecked")
+    public List<PersonneDTO> getList() {
+        return (List<PersonneDTO>)list.clone();
     }
 }

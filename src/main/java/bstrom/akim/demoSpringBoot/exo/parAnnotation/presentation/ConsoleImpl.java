@@ -1,6 +1,6 @@
 package bstrom.akim.demoSpringBoot.exo.parAnnotation.presentation;
 
-import bstrom.akim.demoSpringBoot.exo.parAnnotation.service.GestionPersonne;
+import bstrom.akim.demoSpringBoot.exo.parAnnotation.service.PersonneService;
 import bstrom.akim.demoSpringBoot.exo.parAnnotation.exception.PersonNotFoundException;
 import bstrom.akim.demoSpringBoot.exo.parAnnotation.service.dto.PersonneDTO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,10 +12,10 @@ import java.util.List;
 import java.util.Scanner;
 
 @Component
-public class InterfaceConsoleImpl implements InterfaceConsoleExo {
+public class ConsoleImpl implements Console {
 
     @Autowired
-    private GestionPersonne gestionPersonne;
+    private PersonneService gestionPersonne;
     @Autowired
     private Scanner scan;
 
